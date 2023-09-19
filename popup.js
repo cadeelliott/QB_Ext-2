@@ -1,6 +1,8 @@
 // In popup.js
 document.addEventListener("DOMContentLoaded", function () {
   const copyButton = document.getElementById("copyButton");
+  const fetchButton = document.getElementById("fetchButton");
+  const resultDiv = document.getElementById("result");
 
   copyButton.addEventListener("click", () => {
     const urlToCopy = "https://app.qbo.intuit.com/app/reportv2?mem_rpt_id=16"; // Replace with the URL you want to copy
