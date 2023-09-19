@@ -28,6 +28,6 @@
   },
   "permissions": ["tabs"],
   "host_permissions": [
-    "https://app.qbo.intuit.com/app/reportv2?mem_rpt_id=16&edited_sections=false"  // Replace with the URL you want to copy content from
+    "https://app.qbo.intuit.com/app/reportv2?mem_rpt_id=16"  // Replace with the URL you want to copy content from
   ]
 }
