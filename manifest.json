@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "URL Content Copier",
+  "version": "1.0",
+  "description": "Copy content from a specific URL.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "https://app.qbo.intuit.com/app/reportv2?mem_rpt_id=16&edited_sections=false"  // Replace with the URL you want to copy content from
+  ]
+}
